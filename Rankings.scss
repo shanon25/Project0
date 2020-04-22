@@ -1,0 +1,56 @@
+$text-align:Center;
+
+#header{
+    text-align: $text-align;
+    color:black;
+    border: 5px solid rgb(209, 223, 16);
+    background-color: rgba(0, 109, 27, 0.849);
+}
+table{
+    border: 2px solid black;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: aqua;
+
+    th,td{
+    border: 3px solid black;
+    padding: 5px;
+    width: 5%;
+    }
+}
+th{
+    background-color:goldenrod;
+    text-align:$text-align;
+}
+td{
+    text-align: $text-align;
+    font-weight: bold;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+a::after{
+    color: blueviolet;
+}
+%message{
+    float: right;
+    padding-right: 100px;
+    padding-top: 50px;
+    
+}
+.img{
+    @extend %message;
+}
+@media(min-width: 500px){
+    body{
+        background-color: rgba(10, 97, 155, 0.74)
+    }
+}
+@media(max-width: 499px){
+    body{
+        background-color:rgba(10, 97, 155, 0.74)
+    }
+}
